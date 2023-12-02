@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginStart="12dp"
+    app:cardElevation="10dp"
+    android:layout_marginEnd="12dp"
+    app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="82dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/listImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rice"
+                app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+
+            <TextView
+                android:id="@+id/listName"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/listImage"
+                android:backgroundTint="#FFFFFF"
+                android:text="Rosanna"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/listName2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/listName"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="197dp"
+                android:layout_marginTop="-27dp"
+                android:layout_marginBottom="42dp"
+                android:layout_toEndOf="@+id/listImage"
+                android:text="Stocks: 10"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/Category"
+                android:layout_width="66dp"
+                android:layout_height="31dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="-163dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="222dp"
+                android:layout_marginBottom="1dp"
+                android:layout_toEndOf="@+id/listName"
+                android:text="Rice"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
